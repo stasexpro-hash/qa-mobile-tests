@@ -27,8 +27,8 @@ public class DriverFactory {
         caps.setCapability("app", TestConfig.APP_PATH);
 
         // Дополнительные настройки
-        caps.setCapability("autoGrantPermissions", true); // посмотреть что это все и убрать нахуй
-        caps.setCapability("noReset", false); // Чистый старт каждого теста
+        caps.setCapability("autoGrantPermissions", true); 
+        caps.setCapability("noReset", false);
 
         // Создаю драйвер
         driver = new AndroidDriver(new URL(TestConfig.APPIUM_SERVER), caps);
